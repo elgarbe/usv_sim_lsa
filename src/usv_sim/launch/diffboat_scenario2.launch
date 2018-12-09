@@ -33,9 +33,9 @@
 	<group unless="$(arg parse)">
 			<arg name="namespace" default="diffboat"/>  
 	    	<arg name="spawnerUsed" default="true"/>
-            <node name="patrol" pkg="usv_navigation" type="patrol_pid_scene2.py" ns="diffboat" unless="$(arg gui)"/>
+            <!--<node name="patrol" pkg="usv_navigation" type="patrol_pid_scene2.py" ns="diffboat" unless="$(arg gui)"/>-->
 			<include file="$(find usv_sim)/launch/models/spawn_diffboat.launch" pass_all_args="true"/>
-			<node pkg="rosbag" type="record" name="record_diffboat" args="-O /home/paravisi/usv_sim_lsa/bags/diffboat_scenario2parado.bag /diffboat/state" output="screen"/>
+			<!--<node pkg="rosbag" type="record" name="record_diffboat" args="-O /home/paravisi/usv_sim_lsa/bags/diffboat_scenario2parado.bag /diffboat/state" output="screen"/>-->
 			<!--<node pkg="rosbag" type="record" name="record_diffboatImu" args="-O /home/paravisi/usv_sim_lsa/bags/diffboat_scenario2altoImu.bag /diffboat/Imu" output="screen"/>
 			-->
 	</group>
