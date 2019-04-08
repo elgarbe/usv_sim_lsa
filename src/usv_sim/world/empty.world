@@ -5,6 +5,12 @@
       <uri>model://sun</uri>
     </include>
 
+    <gui>
+    <camera name="user_camera">
+        <pose>220 100 5 0 0 0</pose>
+      </camera>
+    </gui>   
+
     <wind>
       <linear_velocity>11 11 0</linear_velocity> <!-- Wind linear velocity -->
     </wind>
